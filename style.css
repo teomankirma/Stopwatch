@@ -9,7 +9,7 @@ body {
   background-image: url(background.jpg);
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 210vh;
+  background-size: 220vh;
 }
 
 .container {
@@ -23,20 +23,31 @@ body {
   background-color: white;
 }
 
-.timer {
+#timer {
   font-size: 30px;
+  align-items: center;
+  padding: 20px;
 }
 
 .start,
 .stop {
-  padding: 0;
-  border: none;
-  background: none;
+  border-radius: 10px;
+  border-style: hidden;
 }
 
-.play_img,
-.stop_img {
-  max-width: 100%;
-  height: 40px;
-  width: 40px;
+.start {
+  background-color: #baff2f;
+  margin-right: 8px;
+}
+.stop {
+  background-color: #ffb32f;
+  margin-left: 8px;
+}
+
+.fa-play,
+.fa-stop,
+.fa-pause {
+  font-size: 30px;
+  padding: 10px;
+  --fa-animation-duration: 2s;
 }
